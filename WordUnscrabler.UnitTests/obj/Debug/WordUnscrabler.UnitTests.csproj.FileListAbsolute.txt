@@ -1,0 +1,9 @@
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrabler.UnitTests\bin\Debug\WordUnscrabler.UnitTests.dll
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrabler.UnitTests\bin\Debug\WordUnscrabler.UnitTests.pdb
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrabler.UnitTests\bin\Debug\nunit.framework.dll
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrabler.UnitTests\bin\Debug\nunit.framework.xml
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrabler.UnitTests\obj\Debug\WordUnscrabler.UnitTests.csprojAssemblyReference.cache
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrabler.UnitTests\obj\Debug\WordUnscrabler.UnitTests.csproj.CoreCompileInputs.cache
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrabler.UnitTests\obj\Debug\WordUnscrabler.UnitTests.csproj.CopyComplete
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrabler.UnitTests\obj\Debug\WordUnscrabler.UnitTests.dll
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrabler.UnitTests\obj\Debug\WordUnscrabler.UnitTests.pdb
