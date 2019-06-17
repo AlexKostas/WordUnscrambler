@@ -17,5 +17,9 @@ namespace WordUnscrambler.Utils {
         public static string GetLine() {
             return Console.ReadLine() ?? string.Empty;
         }
+
+        public static string[] GetSplittedLine(string separator) {
+            return GetLine().Split(separator);
+        }
     }
 }
