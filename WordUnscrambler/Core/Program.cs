@@ -6,13 +6,11 @@ using WordUnscrambler.Utils;
 
 namespace WordUnscrambler.Core {
     public static class Program {
-        static FileReader fileReader;
         static WordMatcher wordMatcher;
 
         static void Main() {
             try {
-                fileReader = new FileReader();
-                wordMatcher = new WordMatcher(fileReader.Read(Constants.WordListFileName));
+                wordMatcher = new WordMatcher(FileReader.Read(Constants.WordListFileName));
                 RunProgram();
             }
             catch (Exception e) {
@@ -25,12 +23,12 @@ namespace WordUnscrambler.Core {
             while (true) {
                 IOUtil.Print(Constants.OptionsToEnterScrambledWords);
                 var option = IOUtil.GetLine();
-                handleUserOption(option);
-                if (UserInput.shouldStopProgram()) break;
+                HandleUserOption(option);
+                if (UserInput.ShouldStopProgram()) break;
             }
         }
 
-        static void handleUserOption(string option) {
+        static void HandleUserOption(string option) {
             switch (option.ToUpper()) {
                 case Constants.File:
                     IOUtil.Print(Constants.EnterScrambledWordsViaFile);

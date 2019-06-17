@@ -3,12 +3,10 @@ using WordUnscrambler.Utils;
 
 namespace WordUnscrambler.Core {
     public static class UserInput {
-        static readonly FileReader fileReader = new FileReader();
-
         public static string[] GetScrambledWordsFromFile() {
             try {
                 var fileName = IOUtil.GetLine();
-                return fileReader.Read(fileName);
+                return FileReader.Read(fileName);
             }
             catch (Exception ex) {
                 IOUtil.LogError(Constants.ErrorScrambledWordsCannotBeLoaded + ex.Message);
@@ -17,23 +15,26 @@ namespace WordUnscrambler.Core {
         }
 
         public static string[] GetScrambledWordsManually() {
-            var manualInput = IOUtil.GetLine();
-            return manualInput.Split(",");
+            return IOUtil.GetSplittedLine(",");
         }
         
-        public static bool shouldStopProgram() {
-            return StringUtil.StringsAreEqual(Constants.No, getContinueDesicion());
+        public static bool ShouldStopProgram() {
+            return StringUtil.StringsAreEqual(Constants.No, GetContinueDesicion());
         }
 
-        static string getContinueDesicion() {
+        static string GetContinueDesicion() {
             string continueDecision;
             while (true) {
                 IOUtil.Print(Constants.OptionsToContinueTheProgram);
                 continueDecision = IOUtil.GetLine();
-                if (StringUtil.StringsAreEqual(continueDecision, Constants.Yes) ||
-                    StringUtil.StringsAreEqual(continueDecision, Constants.No))
+                if (StringIsYesOrNo(continueDecision))
                     return continueDecision;
             }
+        }
+
+        static bool StringIsYesOrNo(string input) {
+            return StringUtil.StringsAreEqual(input, Constants.Yes) ||
+                   StringUtil.StringsAreEqual(input, Constants.No);
         }
     }
 }

@@ -19,7 +19,7 @@ namespace WordUnscrambler.Core {
             foreach (var scrambledWord in scrambledWords) {
                 foreach (var word in wordList) {
                     if (compareScrambledWords(scrambledWord, word))
-                        matchedWords.Add(buildMatchedWord(scrambledWord, word));
+                        matchedWords.Add(BuildMatchedWord(scrambledWord, word));
                 }
             }
 
@@ -32,7 +32,7 @@ namespace WordUnscrambler.Core {
                        StringUtil.SortString(word));
         }
 
-        static MatchedWord buildMatchedWord(string scrambledWord, string word) {
+        static MatchedWord BuildMatchedWord(string scrambledWord, string word) {
             return new MatchedWord(scrambledWord, word);
         }
     }
