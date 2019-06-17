@@ -1,39 +1,38 @@
-using System;
 using System.Collections.Generic;
+using WordUnscrambler.Utils;
 
 namespace WordUnscrambler {
     public class WordMatcher {
-        public List<MatchedWord> Match(string[] scrambledWords, string[] wordList) {
-            if(scrambledWords == null || scrambledWords.Length == 0)
+        string[] wordList;
+
+        public WordMatcher(string[] wordList) {
+            this.wordList = wordList;
+        }
+
+        public List<MatchedWord> Match(string[] scrambledWords) {
+            if (scrambledWords == null || scrambledWords.Length == 0)
                 return new List<MatchedWord>();
-            
+
             var matchedWords = new List<MatchedWord>();
 
             foreach (var scrambledWord in scrambledWords) {
                 foreach (var word in wordList) {
-                    if(scrambledWord.Equals(word, StringComparison.OrdinalIgnoreCase))
-                        matchedWords.Add(BuildMatchedWord(scrambledWord, word));
-                    else {
-                        var scrambledWordArray = scrambledWord.ToCharArray();
-                        var wordArray = word.ToCharArray();
-                        
-                        Array.Sort(scrambledWordArray);
-                        Array.Sort(wordArray);
-                        
-                        var sortedScrambledWord = new string(scrambledWordArray);
-                        var sortedWord = new string(wordArray);
-                        if (sortedScrambledWord.Equals(sortedWord,
-                            StringComparison.OrdinalIgnoreCase)) {
-                            matchedWords.Add(BuildMatchedWord(scrambledWord, word));
-                        }
-                    }
+                    if (compareScrambledWords(scrambledWord, word))
+                        matchedWords.Add(buildMatchedWord(scrambledWord, word));
                 }
             }
-            
+
             return matchedWords;
         }
 
-        MatchedWord BuildMatchedWord(string scrambledWord, string word) {
+        bool compareScrambledWords(string scrambledWord, string word) {
+            return StringUtility.WordsAreEqual(scrambledWord, word) ||
+                   StringUtility.WordsAreEqual(StringUtility.SortString(scrambledWord),
+                       StringUtility.SortString(word));
+        }
+
+
+        static MatchedWord buildMatchedWord(string scrambledWord, string word) {
             return new MatchedWord(scrambledWord, word);
         }
     }

@@ -3,11 +3,14 @@ using System.Linq;
 using System.Collections.Generic;
 
 namespace WordUnscrambler {
-    class Program {
+    public static class Program {
         static readonly FileReader fileReader = new FileReader();
-        static readonly WordMatcher wordMatcher = new WordMatcher();
+        static WordMatcher wordMatcher;
 
         static void Main(string[] args) {
+            var wordList = fileReader.Read(Constants.WordListFileName);
+            wordMatcher = new WordMatcher(wordList);
+            
             bool continueWordUnscramble;
             do {
                 Console.WriteLine(Constants.OptionsToEnterScrambledWords);
@@ -55,14 +58,12 @@ namespace WordUnscrambler {
 
         static void ExecuteScrambledWordsInManualEntryScenario() {
             var manualInput = Console.ReadLine() ?? string.Empty;
-            string[] scrambledWords = manualInput.Split(",");
+            var scrambledWords = manualInput.Split(",");
             DisplayMatchedUnscrambledWords(scrambledWords);
         }
 
         static void DisplayMatchedUnscrambledWords(string[] scrambledWords) {
-            string[] wordList = fileReader.Read(Constants.WordListFileName);
-
-            List<MatchedWord> matchedWords = wordMatcher.Match(scrambledWords, wordList);
+            var matchedWords = wordMatcher.Match(scrambledWords);
 
             if (matchedWords.Any()) {
                 foreach (var matchedWord in matchedWords) {

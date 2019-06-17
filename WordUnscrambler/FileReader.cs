@@ -2,6 +2,7 @@ using System;
 using System.IO;
 
 namespace WordUnscrambler {
+    //TODO: Unit test this class
     public class FileReader {
         public string[] Read(string fileName) {
             string[] fileContent;
