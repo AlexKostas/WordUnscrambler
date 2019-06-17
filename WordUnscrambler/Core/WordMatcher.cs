@@ -27,9 +27,9 @@ namespace WordUnscrambler.Core {
         }
 
         bool compareScrambledWords(string scrambledWord, string word) {
-            return StringUtility.WordsAreEqual(scrambledWord, word) ||
-                   StringUtility.WordsAreEqual(StringUtility.SortString(scrambledWord),
-                       StringUtility.SortString(word));
+            return StringUtil.StringsAreEqual(scrambledWord, word) ||
+                   StringUtil.StringsAreEqual(StringUtil.SortString(scrambledWord),
+                       StringUtil.SortString(word));
         }
 
         static MatchedWord buildMatchedWord(string scrambledWord, string word) {

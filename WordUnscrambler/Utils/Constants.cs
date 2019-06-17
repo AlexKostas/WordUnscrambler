@@ -11,7 +11,7 @@ namespace WordUnscrambler.Utils {
         public const string OptionNotRecognised = "The option was not recognised";
        
         public const string ErrorScrambledWordsCannotBeLoaded = "Scrambled words were not loaded" +
-                                                                " because there was an error";
+                                                                " because there was an error: ";
         public const string ErrorProgramWillBeTerminated = "The program will be terminated";
         
         public const string MatchFound = "Match found for {0}: {1}";
