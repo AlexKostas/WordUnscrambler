@@ -1,0 +1,11 @@
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrambler\bin\Debug\netcoreapp2.1\WordUnscrambler.deps.json
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrambler\bin\Debug\netcoreapp2.1\WordUnscrambler.runtimeconfig.json
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrambler\bin\Debug\netcoreapp2.1\WordUnscrambler.runtimeconfig.dev.json
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrambler\bin\Debug\netcoreapp2.1\WordUnscrambler.dll
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrambler\bin\Debug\netcoreapp2.1\WordUnscrambler.pdb
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrambler\obj\Debug\netcoreapp2.1\WordUnscrambler.csprojAssemblyReference.cache
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrambler\obj\Debug\netcoreapp2.1\WordUnscrambler.csproj.CoreCompileInputs.cache
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrambler\obj\Debug\netcoreapp2.1\WordUnscrambler.AssemblyInfoInputs.cache
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrambler\obj\Debug\netcoreapp2.1\WordUnscrambler.AssemblyInfo.cs
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrambler\obj\Debug\netcoreapp2.1\WordUnscrambler.dll
+C:\Users\kalex\Documents\Έγγραφα\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\C#\WordUnscrambler\WordUnscrambler\obj\Debug\netcoreapp2.1\WordUnscrambler.pdb
