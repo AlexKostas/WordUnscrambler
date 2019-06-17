@@ -1,0 +1,59 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\kalex\\Documents\\Έγγραφα\\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\\C#\\WordUnscrambler\\WordUnscrambler.Tests.Unit\\WordUnscrambler.Tests.Unit.csproj",
+    "projectName": "WordUnscrambler.Tests.Unit",
+    "projectPath": "C:\\Users\\kalex\\Documents\\Έγγραφα\\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\\C#\\WordUnscrambler\\WordUnscrambler.Tests.Unit\\WordUnscrambler.Tests.Unit.csproj",
+    "outputPath": "C:\\Users\\kalex\\Documents\\Έγγραφα\\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\\C#\\WordUnscrambler\\WordUnscrambler.Tests.Unit\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {
+          "C:\\Users\\kalex\\Documents\\Έγγραφα\\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\\C#\\WordUnscrambler\\WordUnscrambler\\WordUnscrambler.csproj": {
+            "projectPath": "C:\\Users\\kalex\\Documents\\Έγγραφα\\ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ\\C#\\WordUnscrambler\\WordUnscrambler\\WordUnscrambler.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "Microsoft.NET.Test.Sdk": {
+          "target": "Package",
+          "version": "[15.8.0, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        },
+        "NUnit3TestAdapter": {
+          "target": "Package",
+          "version": "[3.10.0, )"
+        },
+        "nunit": {
+          "target": "Package",
+          "version": "[3.10.1, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

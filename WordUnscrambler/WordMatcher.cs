@@ -4,6 +4,9 @@ using System.Collections.Generic;
 namespace WordUnscrambler {
     public class WordMatcher {
         public List<MatchedWord> Match(string[] scrambledWords, string[] wordList) {
+            if(scrambledWords == null || scrambledWords.Length == 0)
+                return new List<MatchedWord>();
+            
             var matchedWords = new List<MatchedWord>();
 
             foreach (var scrambledWord in scrambledWords) {
