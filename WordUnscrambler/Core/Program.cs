@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
+using WordUnscrambler.Utils;
 
-namespace WordUnscrambler {
+namespace WordUnscrambler.Core {
     public static class Program {
         static readonly FileReader fileReader = new FileReader();
         static WordMatcher wordMatcher;

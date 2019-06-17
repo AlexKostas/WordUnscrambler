@@ -1,7 +1,8 @@
 using System.Collections.Generic;
+using WordUnscrambler.Data;
 using WordUnscrambler.Utils;
 
-namespace WordUnscrambler {
+namespace WordUnscrambler.Core {
     public class WordMatcher {
         string[] wordList;
 
@@ -30,7 +31,6 @@ namespace WordUnscrambler {
                    StringUtility.WordsAreEqual(StringUtility.SortString(scrambledWord),
                        StringUtility.SortString(word));
         }
-
 
         static MatchedWord buildMatchedWord(string scrambledWord, string word) {
             return new MatchedWord(scrambledWord, word);

@@ -1,4 +1,4 @@
-namespace WordUnscrambler {
+namespace WordUnscrambler.Utils {
     public static class Constants {
         public const string OptionsToEnterScrambledWords = "Enter scrambled word(s) manually or " +
                                            "as a file: " + File + " - file/" + Manual + " - manual";
